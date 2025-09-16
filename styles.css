@@ -4,25 +4,31 @@
     box-sizing: border-box;
     font-family: "Outfit", sans-serif;
     --background: #262833;
-    --badge: #43454d;
-    --light-purple:#e4d6f3;
-    --dark-purple:#a686c4;
-    --light-sandle:#f5ddc8;
-    --sandle: #e9ae79;
-    --border:#888585;
-    --title:#bbbcbf;
-    --links:#73b06f;
+    --badge:  #43454d;
+    --green-bg: #73b06f;
+    --light-purple: #e4d6f3;
+    --dark-purple: #a686c4;
+    --light-sandle: #f5ddc8;
+    --sandle:  #e9ae79;
+    --light-gray: #e3ece6;
+    --border: #888585;
+    --title: #bbbcbf;
+    --links: #73b06f;
+    --card-text: #26283f;
 }
 body{
     background-color: #262833;
 }
 /*header section*/
 header{
+    background-color: var(--background);
     padding: 1em 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid var(--border);
+    width: 100%;
+    z-index: 999;
 }
 .profile-sec{
     display: flex;
@@ -37,6 +43,7 @@ header{
 
 /* nav section */
 nav{
+    float: left;
     padding: 1em;
     max-width: 220px;
     height: 100%;
@@ -87,4 +94,164 @@ nav{
 }
 nav a:hover{
     color: var(--links);
+}
+
+/* section 1 */
+main{
+    padding: 2em;
+    display: grid;
+
+}
+.inventory-sec{
+    padding: 2em;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+}
+.inventory-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.sec-name{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+}
+/*card section */
+.balance-card{
+    margin: 2em 0;
+    background: linear-gradient(to right,var(--light-gray) 0% 50%,var(--green-bg) 50% 100%);
+    padding: 1.5em;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.balance-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.details-sec .details{
+    font-size: 1rem;
+    padding: 3px 15px;
+    border-radius: 15px;
+    border: none;
+}
+.balance{
+    font-weight: 500;
+}
+.money{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+/* individual cards */
+.inventory-details{
+    margin-top: 2em;
+}
+.card{
+    max-width: 280px;
+    height: 200px;
+    padding: 1em;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+.card-top,
+.card-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8em 0;
+}
+.card-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.add{
+    max-width: 280px;
+    height: 200px;
+    border: 1px dashed var(--border);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add p{
+    color: #fff;
+}
+/*card info*/
+.card-type,
+.exp{
+    color:var(--card-text);
+}
+.card-name{
+    text-transform: uppercase;
+    color: var(--card-text);
+}
+.card-no{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--card-text);
+}
+/* card coloring */
+.purple{
+    background: linear-gradient(to bottom, var(--light-purple) 0% 63%, var(--dark-purple) 60% 100%);
+}
+.sandle{
+    background: linear-gradient(to bottom, var(--light-sandle)0% 63%, var(--sandle)60% 100%);
+}
+/* stats section */
+.stats-info{
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.stats-category{
+    display: flex;
+    gap: 10px;
+}
+.image-sec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-sec img{
+    width: 50px;
+    padding: 0.8em;
+    border-radius: 10px;
+}
+/* icon coloring */
+.earnings{
+    background-color: var(--green-bg);
+}
+.spendings{
+    background-color: var(--dark-purple);
+}
+.goals{
+    background-color: var(--sandle);
+}
+.stats-details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.category{
+    font-size: 1rem;
+    color: #cac4c4;
+    font-weight: 400;
+}
+.money-2{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
