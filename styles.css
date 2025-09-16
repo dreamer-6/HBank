@@ -52,7 +52,7 @@ nav{
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 50px;
+
 }
 .header{
     margin: 1em;
@@ -97,12 +97,19 @@ nav a:hover{
 }
 
 /* section 1 */
+.wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+}
 main{
     padding: 2em;
     display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
 
 }
-.inventory-sec{
+.inventory-sec,
+.card-sec{
     padding: 2em;
     border: 1px solid var(--border);
     border-radius: 20px;
@@ -150,10 +157,10 @@ main{
 }
 /* individual cards */
 .inventory-details{
-    margin-top: 2em;
+    margin: 1em auto;
 }
 .card{
-    max-width: 280px;
+    width: 280px;
     height: 200px;
     padding: 1em;
     border-radius: 15px;
@@ -175,10 +182,8 @@ main{
     align-items: center;
 }
 .add{
-    max-width: 280px;
-    height: 200px;
-    border: 1px dashed var(--border);
-    height: auto;
+    border: 2px dashed var(--border);
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -200,6 +205,13 @@ main{
     font-weight: 600;
     color: var(--card-text);
 }
+.add-card{
+    background-color: var(--background);
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
 /* card coloring */
 .purple{
     background: linear-gradient(to bottom, var(--light-purple) 0% 63%, var(--dark-purple) 60% 100%);
@@ -207,14 +219,19 @@ main{
 .sandle{
     background: linear-gradient(to bottom, var(--light-sandle)0% 63%, var(--sandle)60% 100%);
 }
+.green{
+    background: linear-gradient(to bottom, var(--light-gray)0% 63%, var(--green-bg)60% 100%);
+    transform: rotate(-90deg);
+    margin:4em auto;
+}
 /* stats section */
 .stats-info{
     border: 1px solid var(--border);
     border-radius: 15px;
     padding: 2em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .stats-category{
     display: flex;
@@ -254,4 +271,65 @@ main{
     color: #fff;
     font-size: 1.5rem;
     font-weight: 600;
+}
+/* card-section*/
+.card-sec{
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+.detail-of-card{
+    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.card-information{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.name{
+    color: #fff;
+    text-transform: uppercase;
+    color: var(--title);
+    font-size: 0.8rem;
+}
+.num{
+    color: #fff;
+}
+.light{
+    color: #fff;
+}
+.other-info{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border);
+}
+.expiry,
+.cvv,
+.level{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 1em 0 0;
+    border-right: 1px solid var(--border);
+}
+.level{
+    border: none;
+}
+.spending{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 1.5em 0;
+}
+.range{
+    width: 100%;
+    height: 7px;
+    border-radius: 5px;
+    background: linear-gradient(to right, var(--green-bg)0% 30%,var(--light-gray)30% 100%);
 }
