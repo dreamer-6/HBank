@@ -3,158 +3,88 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Outfit", sans-serif;
+    --background: #262833;
+    --badge: #43454d;
+    --light-purple:#e4d6f3;
+    --dark-purple:#a686c4;
+    --light-sandle:#f5ddc8;
+    --sandle: #e9ae79;
+    --border:#888585;
+    --title:#bbbcbf;
+    --links:#73b06f;
 }
 body{
     background-color: #262833;
 }
 /*header section*/
 header{
-    width: 100%;
-    border-bottom: 1px solid #fff;
+    padding: 1em 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em;
+    border-bottom: 1px solid var(--border);
 }
 .profile-sec{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
-.profile-sec p{
+.profile-sec a{
+    text-decoration: none;
     color: #fff;
 }
-/*navigation bar*/
+
+/* nav section */
 nav{
-    max-width: 200px;
+    padding: 1em;
+    max-width: 220px;
     height: 100%;
-    padding: 1.5em;
+    border-right: 1px solid var(--border);
     display: flex;
     flex-direction: column;
-    gap: 10em;
-    border-right: 1px solid #fff;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
 }
-.category{
-    display: flex;
-    gap: 10px;
+.header{
+    margin: 1em;
+    display: block;
+}
+.links{
     color: #fff;
-    margin-bottom: 1em;
+    text-decoration: none;
 }
-.nav-title{
-    padding: 1em 0;
-    color: #ffffffaf;
-    font-size: 0.9rem;
+.links-sec{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 0.5em 0;
 }
-.new{
+.notification{
+    background-color:var(--light-purple);
     color: #000;
-    background-color: #e4d6f3;
-    padding:0 4px;
-    border-radius: 10px;
-    text-align: center;
+    border-radius: 25px;
+    padding: 0 5px;
     margin-left: 20px;
+    font-size: 0.8rem;
 }
 .badge{
+    background-color: var(--badge);
+    border-radius: 25px;
+    padding: 0 5px;
+    margin-left: 20px;
     font-size: 0.8rem;
-    background-color: #43454d;
-    padding:0 8px;
-    border-radius: 10px;
-    text-align: center;
-    margin-left: 15px;
-}
-/*main section*/
-main{
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-}
-.account-sec{
-    margin: 2em 1em;
-    padding: 2em;
-    border: 1px solid #fff;
-}
-/*inventory-section*/
-.inventory-top{
-    border-radius: 20px;
-}
-.inventory-sec{
-    margin-bottom: 3em;
-}
-.inventory-title{
-    font-size: 1rem;
-    font-weight: 400;
     color: #fff;
-    margin-bottom: 1.5em;
 }
-.card{
-    background-color:#e3ece6;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 auto; 
-    border-radius: 10px;
-}
-.balance{
-    padding: 1.5em;
+.title{
+    color: var(--title);
+    font-size: 0.8rem;
     font-weight: 500;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;
-    min-width: 150px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
-.details{
-    background-image: url(resources/background-decor.svg);
-    background-color:#73b06f;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-.detail-button{
-    margin-bottom: 1em;
-    background-color: #e4d6f3;
-    border: none;
-    padding: 0.2em 1em;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-/* card-sec */
-.inventory-bottom{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    gap: 20px;
-}
-.card-container{
-    background-color: #e4d6f3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 30px;
-    border-radius: 20px;
-}
-.card-top{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    padding:1em;
-}
-.card-header, .card-info, .card-bottom{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.card-no{
-    font-size: 1.5rem;
-    font-weight: 500;
-}
-.card-bottom{
-    background-color:#a686c4;
-    padding: 1em;
-    border-radius: 0 0 20px 20px;
-}
-.yellow{
-    background-color:#f5ddc8 ;
-}
-.yellow-bottom{
-    background-color: #e9ae79;
+nav a:hover{
+    color: var(--links);
 }

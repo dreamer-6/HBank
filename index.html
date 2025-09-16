@@ -11,126 +11,77 @@
 
 </head>
 <body>
-    <header>
-        <img src="resources/hbank-logo.svg" alt="hbank-logo">
+      <header>
+        <a href="#hbank"><img src="resources/hbank-logo.svg" alt="hbank-logo"></a>
         <div class="profile-sec">
-            <img src="resources/avatar.png" alt="users">
-            <p>Vasanth</p>
+            <img src="resources/avatar.png" alt="avatar">
+            <a href="#account">VASANTH</a>
         </div>
-    </header>
-        <main>
-            <nav>
-                <div class="menu">
-                    <div class="category">
-                        <img src="resources/House.svg" alt="dashboard">
-                        <p class="icon-description">Dashboard</p>
-                    </div>
-                    <div class="analytics">
-                        <p class="nav-title">ANALYTICS</p>
-                        <div class="category">
-                            <img src="resources/show chart-1.svg" alt="perfomance">
-                            <p class="icon-description">Perfomance</p>
-                        </div>
-                        <div class="category">
-                            <img src="resources/Archery.svg" alt="Hotjar">
-                            <p class="icon-description">Hotjar <span class="new">new</span></p>
-                        </div>
-                    </div>
-                    <div class="analytics">
-                        <p class="nav-title">SUPPORT</p>
-                        <div class="category">
-                            <img src="resources/ticket.svg" alt="ticket">
-                            <p class="icon-description">Tickets <span class="badge">18</span></p>
-                        </div>
-                        <div class="category">
-                            <img src="resources/account.svg" alt="Agents">
-                            <p class="icon-description">Agents</p>
-                        </div>
-                        <div class="category">
-                            <img src="resources/users.svg" alt="customers">
-                            <p class="icon-description">Customers</p>
-                        </div>
-                    </div>
-                    <div class="analytics">
-                        <p class="nav-title">SHOP</p>
-                        <div class="category">
-                            <img src="resources/shop.svg" alt="shop">
-                            <p class="icon-description">Products</p>
-                        </div>
-                        <div class="category">
-                            <img src="resources/basket.svg" alt="orders">
-                            <p class="icon-description">Orders</p>
-                        </div>
-                        <div class="category">
-                            <img src="resources/chat info.svg" alt="reports">
-                            <p class="icon-description">Reports</p>
-                        </div>
-                    </div>
+      </header>
+      <nav>
+        <div class="top-nav">
+            <div class="header dashboard">
+                <div class="links-sec">
+                    <img src="resources/House.svg" alt="House">
+                    <a class="links" id="dashboard" href="#dashboard">Dashboard</a>
                 </div>
-                <div class="account">
-                    <div class="category">
-                        <img src="resources/Setting.svg" alt="settings">
-                        <p class="icon-description">Settings</p>
-                    </div>
-                    <div class="category">
-                        <img src="resources/Logout.svg" alt="logout">
-                        <p class="icon-description">Logout</p>
-                    </div>
+            </div>
+            <div class="header analytics">
+                <h2 class="title">analytics</h2>
+                <div class="links-sec">
+                    <img src="resources/show chart-1.svg" alt="showchart">
+                    <a class="links" href="#perfomance">Perfomance</a>
                 </div>
-            </nav>
-            <section class="account-sec">
-                <article class="inventory-top">
-                    <div class="inventory-sec">
-                        <h2 class="inventory-title">Inventory Details</h2>
-                        <div class="card">
-                            <div class="balance">
-                                <p>Your Balance:</p>
-                                <h2>$25,330</h2>
-                                <p>3 cards</p>
-                            </div>
-                            <div class="details">
-                               <button type="button" class="detail-button">Details →</button>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-                <h2 class="inventory-title">Inventory Details <span class="badge">2</span></h2>
-                <article class="inventory-bottom">
-                    <div class="card-container">
-                        <div class="card-top">
-                            <div class="card-header">
-                                <p>Shopping Card</p>
-                                <img src="resources/card.svg" alt="card chip">
-                            </div>
-                            <div class="card-info">
-                                <p class="card-name">NAME</p>
-                                <p class="card-month">Exp 26/6</p>
-                            </div>
-                        </div>
-                        <div class="card-bottom">
-                            <p class="card-no">**** **** 0928</p>
-                            <img src="resources/visa-logo.svg" alt="visa-logo">
-                        </div>
-                    </div>
-                    <div class="card-container yellow">
-                        <div class="card-top">
-                            <div class="card-header">
-                                <p>Shopping Card</p>
-                                <img src="resources/card.svg" alt="card chip">
-                            </div>
-                            <div class="card-info">
-                                <p class="card-name">NAME</p>
-                                <p class="card-month">Exp 26/6</p>
-                            </div>
-                        </div>
-                        <div class="card-bottom yellow-bottom">
-                            <p class="card-no">**** **** 0928</p>
-                            <img src="resources/visa-logo.svg" alt="visa-logo">
-                        </div>
-                    </div>
-                </article>
-            </section>
-        </main>
-        
+                <div class="links-sec">
+                    <img src="resources/Archery.svg" alt="Archery">
+                    <a class="links" href="#perfomance">Hotjar</a><span class="notification">New</span>
+                </div>
+            </div>
+            <div class="header support">
+                <h2 class="title">support</h2>
+                <div class="links-sec">
+                    <img src="resources/ticket.svg" alt="ticket">
+                    <a class="links" href="#perfomance">Tickets</a><span class="badge">18</span>
+                </div>
+                <div class="links-sec">
+                    <img src="resources/account.svg" alt="account">
+                    <a class="links" href="#perfomance">Agents</a>
+                </div>
+                <div class="links-sec">
+                    <img src="resources/users.svg" alt="user">
+                    <a class="links" href="#perfomance">Customers</a>
+                </div>
+            </div>
+            <div class="header shop">
+                <h2 class="title">shop</h2>
+                <div class="links-sec">
+                    <img src="resources/shop.svg" alt="shop">
+                    <a class="links" href="#perfomance">Product</a>
+                </div>
+                <div class="links-sec">
+                    <img src="resources/basket.svg" alt="basket">
+                    <a class="links" href="#perfomance">Orders</a>
+                </div>
+                <div class="links-sec">
+                    <img src="resources/chat info.svg" alt="chat info">
+                    <a class="links" href="#perfomance">Reports</a>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-nav">
+            <div class="header settings">
+                <div class="links-sec">
+                    <img src="resources/Setting.svg" alt="settings">
+                    <a class="links" href="#dashboard">Settings</a>
+                </div>
+            </div>
+            <div class="header logout">
+                <div class="links-sec">
+                    <img src="resources/Logout.svg" alt="logout">
+                    <a class="links" href="#dashboard">Logout</a>
+                </div>
+            </div>
+        </div>
+      </nav>
 </body>
 </html>
