@@ -98,6 +98,9 @@ nav{
     text-transform: uppercase;
     margin-bottom: 10px;
 }
+.links:active{
+    color: var(--links);
+}
 .links:hover{
     color: var(--links);
 }
@@ -123,7 +126,7 @@ main{
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 .sec-name{
     color: #fff;
@@ -133,7 +136,7 @@ main{
 /*card section */
 .balance-card{
     margin: 2em auto;
-    background: linear-gradient(to right,var(--light-gray) 0% 50%,var(--green-bg) 50% 100%);
+    background: linear-gradient(to right,var(--light-gray) 0% 70%,var(--green-bg) 70% 100%);
     padding: 1.5em;
     border-radius: 15px;
     display: flex;
@@ -160,9 +163,22 @@ main{
     font-size: 1.5rem;
     font-weight: 600;
 }
+.card, .details, .add-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+.details:hover, .add-card:hover {
+  background: var(--green-bg);
+  color: #fff;
+}
+
 /* individual cards */
 .card{
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     height: 200px;
     padding: 1em;
     border-radius: 15px;
